@@ -74,7 +74,7 @@ def main(private field[6] R, \
 //Lowest bid should correllate with supplier
 //To Do: write the simplest implementation to simplify, each of the below would be a range proof
 field[3] lowestbidder = [...[0; 3]] //Save supplier and the lowest bid
-lowestbidder = if bidone < bidtwo && bidtwo < bidthree then [A[0], A[1], bidone] else [...[0; 3]] fi 
+lowestbidder = if bidone < bidtwo && bidone < bidthree then [A[0], A[1], bidone] else [...[0; 3]] fi 
 lowestbidder = if bidtwo < bidone && bidtwo < bidthree then [A[2], A[3], bidtwo] else [...[0; 3]] fi
 lowestbidder = if bidthree < bidone && bidthree < bidtwo then [A[4], A[5], bidthree] else [...[0; 3]] fi
 
